@@ -10,7 +10,7 @@
 	  <StaticWebAssetBasePath>App_Plugins</StaticWebAssetBasePath>
 	  
 	  <PackageId>Phases.Umbraco.Community.Tiptap.Rte.Emoji</PackageId>
-	  <Version>1.0.0</Version>
+	  <Version>1.0.1</Version>
 	  <Title>Umbraco TipTap RTE Emoji Picker</Title>
 	  <Authors>Vishnu Shanmughan, Phases.io</Authors>
 	  <Description>
@@ -22,6 +22,7 @@
 		  emoji;emoji-picker;emoji-plugin;unicode;smiley;
 		  editor-extension;backoffice-plugin
 	  </PackageTags>
+	  <Tags>umbraco-marketplace</Tags>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageIcon>package-icon.png</PackageIcon> 
 	  <RepositoryUrl>https://github.com/phases/Tiptap.Rte.Emoji</RepositoryUrl>
