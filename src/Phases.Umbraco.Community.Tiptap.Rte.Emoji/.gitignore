@@ -1,4 +1,4 @@
-﻿/bin/ 
-/obj/
-/nupkgs/
-.vs/
+﻿.vs/
+bin/
+obj/
+nupkgs/
