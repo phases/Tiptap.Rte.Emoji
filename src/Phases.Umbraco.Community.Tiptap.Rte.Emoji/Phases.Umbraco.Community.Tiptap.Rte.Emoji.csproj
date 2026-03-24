@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+	  <AssemblyName>Phases.Umbraco.Community.Tiptap.Rte.Emoji</AssemblyName>
+	  <RootNamespace>Phases.Umbraco.Community.Tiptap.Rte.Emoji</RootNamespace>
+	  <StaticWebAssetBasePath>App_Plugins</StaticWebAssetBasePath>
+	  
+	  <PackageId>Phases.Umbraco.Community.Tiptap.Rte.Emoji</PackageId>
+	  <Version>1.0.0</Version>
+	  <Title>Umbraco TipTap RTE Emoji Picker</Title>
+	  <Authors>Vishnu Shanmughan, Phases.io</Authors>
+	  <Description>
+		  Adds a simple emoji picker to the Umbraco TipTap Rich Text Editor. Insert emojis directly into content using a searchable picker in the backoffice.
+	  </Description>
+	  <PackageTags>
+		  umbraco;umbraco-cms;umbraco-backoffice;umbraco-17;umbraco-plugin;
+		  tiptap;tiptap-editor;rte;rich-text-editor;wysiwyg;
+		  emoji;emoji-picker;emoji-plugin;unicode;smiley;
+		  editor-extension;backoffice-plugin
+	  </PackageTags>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageIcon>package-icon.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/phases/Tiptap.Rte.Emoji</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	  <IncludeBuildOutput>true</IncludeBuildOutput>
+	  <EmbedUntrackedSources>true</EmbedUntrackedSources>
+	  <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="client\package-lock.json" />
+    <Content Remove="client\package.json" />
+    <Content Remove="client\tsconfig.json" />
+    <Content Remove="Component1.razor" />
+    <Content Remove="_Imports.razor" />
+  </ItemGroup>
+	<ItemGroup>
+		<Content Remove="Client\**" />
+	</ItemGroup>
+  <ItemGroup>
+    <None Remove="Component1.razor.css" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+	<!-- Ensures wwwroot/tiptap is built before packing -->
+	<Target Name="BuildClientBeforePack" BeforeTargets="GenerateNuspec;Pack">
+		<PropertyGroup>
+			<ClientDir>$(MSBuildThisFileDirectory)client</ClientDir>
+		</PropertyGroup>
+		<Message Importance="high" Text="Building client assets (npm run build) in $(ClientDir)..." />
+		<Exec Command="npm run build" WorkingDirectory="$(ClientDir)" IgnoreExitCode="false" />
+	</Target>
+</Project>

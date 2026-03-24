@@ -1,0 +1,12 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "Phases.Umbraco.Community.Tiptap.Rte.Emoji",
+  "version": "1.0.0",
+  "extensions": [
+    {
+      "type": "bundle",
+      "alias": "Phases.Umbraco.Community.Tiptap.Rte.Emoji",
+      "js": "/App_Plugins/TipTapEmoji/Phases.Umbraco.Community.Tiptap.Rte.Emoji.js"
+    }
+  ]
+}
