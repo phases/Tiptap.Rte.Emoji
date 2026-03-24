@@ -1,0 +1,41 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "Title": "Emoji Picker",
+  "Description": "Adds a simple emoji picker to the Umbraco TipTap Rich Text Editor. Insert emojis directly into content using a searchable picker in the backoffice.",
+  "AuthorDetails": {
+    "Name": "Phases",
+    "Description": "Phases - We create digital efficiency - Web, Podio, Integrations",
+    "Url": "https://www.phases.io/",
+    "ImageUrl": "https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/package-icon.png",
+    "SyncContributorsFromRepository": false,
+    "Contributors": [
+      {
+        "Name": "Vishnu Shanmughan",
+        "Url": "https://github.com/vishnushanmughan"
+      }
+    ]
+  },
+  "Category": "Editor Tools",
+  "DocumentationUrl": "https://github.com/phases/Tiptap.Rte.Emoji/blob/main/README.md",
+  "LicenseTypes": [ "Free" ],
+  "IssueTrackerUrl": "https://github.com/phases/Tiptap.Rte.Emoji/issues",
+  "PackageType": "Package",
+  "LookingForContributors": true,
+  "LookingForMaintainer": false,
+  "VersionDependencyMode": "Default",
+  "Screenshots": [
+    {
+      "ImageUrl": "https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select.png",
+      "Caption": "Open Rich Text Editor Data Type"
+    },
+    {
+      "ImageUrl": "https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select-2.png",
+      "Caption": "Add Emoji Action to Toolbar"
+    },
+    {
+      "ImageUrl": "https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select-3.png",
+      "Caption": "Emoji Available in Editor Toolbar"
+    } 
+  ],
+  "Tags": [ "umbraco", "backoffice", "tooltips", "editor-tools", "property-descriptions", "ux" ,"rich text editor", "tip tap", "rte", "emoji", "smiley" ]
+}

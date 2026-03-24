@@ -18,19 +18,21 @@
 	  </Description>
 	  <PackageTags>
 		  umbraco;umbraco-cms;umbraco-backoffice;umbraco-17;umbraco-plugin;
-		  tiptap;tiptap-editor;rte;rich-text-editor;wysiwyg;
+		  tiptap;tiptap-editor;rte;rich-text-editor;
 		  emoji;emoji-picker;emoji-plugin;unicode;smiley;
 		  editor-extension;backoffice-plugin
 	  </PackageTags>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageIcon>package-icon.png</PackageIcon>
-	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageIcon>package-icon.png</PackageIcon> 
 	  <RepositoryUrl>https://github.com/phases/Tiptap.Rte.Emoji</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	  <IncludeBuildOutput>true</IncludeBuildOutput>
 	  <EmbedUntrackedSources>true</EmbedUntrackedSources>
 	  <DebugType>embedded</DebugType>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Company>Phases.io</Company>
+	  <PackageProjectUrl>https://github.com/phases/Tiptap.Rte.Emoji</PackageProjectUrl> 
   </PropertyGroup>
 
   <ItemGroup>
@@ -55,6 +57,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.24" />
   </ItemGroup>
+	<ItemGroup>
+		<None Include="package-icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
