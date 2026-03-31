@@ -78,12 +78,12 @@ Now, go to a content page and open the Rich Text Editor — you will see the emo
 ## 📸 Screenshots
 
 ## Open Rich Text Editor Data Type
-![App Screenshot] (https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select.png)
+![App Screenshot] (https://raw.githubusercontent.com/phases/Tiptap.Rte.Emoji/refs/heads/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select.png)
 
 
 ## Add Emoji Action to Toolbar
-![App Screenshot] (https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select-2.png)
+![App Screenshot] (https://raw.githubusercontent.com/phases/Tiptap.Rte.Emoji/refs/heads/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select-2.png)
 
 
 ## Emoji Available in Editor Toolbar
-![App Screenshot] (https://github.com/phases/Tiptap.Rte.Emoji/blob/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select-3.png)
+![App Screenshot] (https://raw.githubusercontent.com/phases/Tiptap.Rte.Emoji/refs/heads/main/src/Phases.Umbraco.Community.Tiptap.Rte.Emoji/screenshots/emoji-select-3.png)
