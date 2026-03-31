@@ -10,7 +10,7 @@
 	  <StaticWebAssetBasePath>App_Plugins</StaticWebAssetBasePath>
 	  
 	  <PackageId>Phases.Umbraco.Community.Tiptap.Rte.Emoji</PackageId>
-	  <Version>1.0.2</Version>
+	  <Version>1.0.3</Version>
 	  <Title>Umbraco TipTap RTE Emoji Picker</Title>
 	  <Authors>Vishnu Shanmughan, Phases.io</Authors>
 	  <Description>
@@ -35,7 +35,10 @@
 	  <Company>Phases.io</Company>
 	  <PackageProjectUrl>https://github.com/phases/Tiptap.Rte.Emoji</PackageProjectUrl> 
   </PropertyGroup>
-
+	<!-- Umbraco dependency so marketplace can list and show version compatibility -->
+	<ItemGroup>
+		<PackageReference Include="Umbraco.Cms.Core" Version="[17.0.0,)" />
+	</ItemGroup>
   <ItemGroup>
     <Content Remove="client\package-lock.json" />
     <Content Remove="client\package.json" />
